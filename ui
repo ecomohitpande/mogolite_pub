@@ -1,0 +1,35 @@
+ui=navbarPage("mongo query",
+              sidebarLayout(
+                sidebarPanel(
+                 selectInput("country1", "Select Cluster Country", unique(data),
+                 # selectInput("country", 'country', choices = "", selected = ""),
+                 
+                #  selectInput("country", 'country', choices = "", selected = ""),
+                ),
+                mainPanel(
+                  verbatimTextOutput(outputId = "text1"),
+                  dataTableOutput(outputId = "qry_results")
+                )
+              ))
+
+
+server=function(input, output, session) {
+  
+    qryResults <- reactive({  
+    
+    region <- list(country = input$data)
+
+    qry <- paste0('{ "x" : "',y,'"}')
+    df <- loadData(qry)
+    return(df)
+    df= data.frame(df)
+
+  })
+  
+  output$qry_results <- renderDataTable({
+   qryResults()   
+  })
+  
+  output$text1 <- renderText(nrow(qryResults()))
+  
+}
