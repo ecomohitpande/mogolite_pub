@@ -19,3 +19,8 @@
 
 ##step 5 
 #once the connection is established specify the database cluster and table name as refered in global.R
+
+## step6 
+# now you can use the n number of data size in shiny app 
+
+
