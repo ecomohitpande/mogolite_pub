@@ -24,3 +24,10 @@
 # now you can use the n number of data size in shiny app 
 
 
+### App name Mogli find species 
+![image](https://user-images.githubusercontent.com/50360364/202906065-58d27105-7e9f-4c77-8bd9-614c77f0ba29.png)
+![image](https://user-images.githubusercontent.com/50360364/202906137-873280f1-38cb-434b-89cb-91d3fd61019d.png)
+
+
+### App link 
+ https://mohit-pandey2.shinyapps.io/app_app/
